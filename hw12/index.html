@@ -1,22 +1,25 @@
-<!doctype html>
-<html lang="zh-Hant-TW">
-<head>
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://tjhsieh.github.io/ct2023s/hw12/index.html -->
+<html lang="zh-Hant-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- Required meta tags -->
-<meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- D3, jquery -->
-<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+<script src="./作品集 Portfolio_files/d3.v3.min.js.下载" charset="utf-8"></script>
+<script src="./作品集 Portfolio_files/jquery-3.6.0.min.js.下载" charset="utf-8"></script>
 
 <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+<link href="./作品集 Portfolio_files/bootstrap.min.css" rel="stylesheet">
+<script src="./作品集 Portfolio_files/bootstrap.bundle.min.js.下载"></script>
 
 <title>作品集 Portfolio</title>
+<!-- https://alexlenail.me/NN-SVG/about.html -->
+<link rel="icon" href="https://tjhsieh.github.io/ct2023s/hw00/favicon.svg">
 <style type="text/css">
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=STJinhei&display=swap');
+  	
   table {
   border-collapse: collapse;
   border: 2px solid white; /* rgba(217,140,144,1) */
@@ -156,7 +159,7 @@
 </head>
 <body>
 <!-- https://alexlenail.me/NN-SVG/about.html -->
-<a href="https://github.com/你的帳號/ct2023s/" class="github-corner" aria-label="View source on Github">
+<a href="https://github.com/%E4%BD%A0%E7%9A%84%E5%B8%B3%E8%99%9F/ct2023s/" class="github-corner" aria-label="View source on Github">
   <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#f9eced; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
     <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
     <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="#f9eced" stroke="#6A4C9C" style="transform-origin: 130px 106px;" class="octo-arm"></path>
@@ -176,53 +179,88 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      若該次作業有程式碼，請放在 https://github.com/<span style="color:red;">你的帳號</span>/ct2023s/hw<span style="color:red;">12</span>/src/ 檔案夾。
+      題目:
+      <li><a href="https://youtu.be/fSVQ6Fo5ttQ">收看 【究匠】自己的名片自己印？他讓傳統活版鉛字重獲新生。撰寫50字觀看心得。</a></li>
+      <li><a href="https://youtu.be/EgAfpSDBrEg">收看 《鏡週刊 文化》將文字之美長留在時光中 日星鑄字行。撰寫50字觀看心得。</a></li>
+      <li><a href="https://youtu.be/hhezZGfNX9Y">收看 【鑄字人】│保存活字工藝的一熄星火，探訪台灣現存活字店。撰寫100字觀看心得。</a></li>
+      <li><a href="https://imccp.com/typefoundry/">設計鉛字活版印刷 SVG 向量圖</a></li>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      若該次作業有程式碼，請放在 https://github.com/<span style="color:red;">你的帳號</span>/ct2023s/hw<span style="color:red;">12</span>/src/ 檔案夾。
     </div>
   </div>
+
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
       <table>
-        <tr>
+        <tbody><tr>
           <th>總分</th>
           <th>完成後打勾</th>
           <th>配分</th>
           <th>分項描述</th>
         </tr>
         <tr>
-          <td rowspan="7" id="myTotal"></td>
+          <td rowspan="7" id="myTotal">5</td>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id='m1'>2</td>
-          <td>Simple baseline - 下載 CubismWebSamples</td>
+          <td id="m1">2</td>
+          <td>Simple baseline - 撰寫100字觀看心得</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>6</td>
-          <td>Medium baseline - 編譯執行 </td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked=""></td>
+          <td id="m2">5</td>
+          <td>Medium baseline - 撰寫100字觀看心得 </td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>2</td>
-          <td>Strong baseline - 更換 Cubism 人物模型、發佈網頁 </td>
+          <td id="m3">3</td>
+          <td>Strong baseline - 設計鉛字活版印刷 SVG 向量圖 </td>
         </tr>
-      </table>
+      </tbody></table>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
+      <h1>Simple Baseline</h1>
+      顏宏霖的故事告訴我們，傳統工藝在現代也能有更好的運用方式。即使是現代科技日新月異，也不代表傳統技藝就已經過時。透過創新思維和技術的應用，可以讓傳統工藝在現代環境中焕发出新的活力。
+在傳承傳統工藝的過程中，需要人才的培育和產學合作，以保證技術的传承和革新。同时，傳統工藝也需要與現代科技相結合，以滿足現代社會的需求。顏宏霖所做的創新，是一個很好的例子，它不僅保留了傳統工藝，還讓傳統工藝更好地適應現代生活。
+此外，顏宏霖在創新中秉持的信念也很值得我們學習，即只有越來越多人在使用傳統老工藝時，它們才會慢慢活起來。我们也应该在日常生活中多去尋找、體驗傳統工藝，支持傳統文化的傳承和發展。
+这段文字让我想到了珍惜和执着的力量。尽管这台照相製版機已经是过时的古董，但它曾经是这个店铺的重要组成部分，也是老板坚持保存日星鑄字行的原因之一。同样地，珍惜和执着也是我们在生活中要学会的品质，它们可以让我们坚持自己的梦想和信念，迎接挑战并克服难关，最终实现自己的目标
+	</div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h1>Medium Baseline</h1>
+     這段文字讓我感受到活字印刷這項古老的工藝雖然已經被現代技術所淘汰，但仍然有人不忘初心，堅持保存這個工藝，並且為之努力。這讓我想起了許多其他傳統文化，也都面臨著被現代化取代的挑戰，但仍然有人不斷嘗試著保護和傳承它們。這種對文化遺產的珍視和繼承意識，值得我們學習和借鑒。同時，影片也向我們展示了中華文化中珍貴的正體楷書的復刻過程，讓我對這項工藝有了更深入的了解。總之，這段文字和影片，讓我對歷史文化有了更多的興趣和熱愛，同時也讓我深刻認識到珍視文化遺產的重要性。
+	</div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+      <h1>Strong Baseline</h1>
+       <img src="./stamp.svg" width="768">
+    </div>
+  </div>
+
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">
+    <!--       
       <video id="video1" style="width:100%;max-width:100%;" controls="">
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      </video> 
+    -->
     </div>
   </div>
 
@@ -269,5 +307,6 @@
   }
 </script>
 
-</body>
-</html>
+
+
+</div></body></html>
